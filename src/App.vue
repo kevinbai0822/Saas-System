@@ -32,7 +32,7 @@
                     </Breadcrumb>
                 </div>
                 <div class="layout-content">
-                    <div class="layout-content-main">内容区域</div>
+                    <div class="layout-content-main"></div>
                 </div>
                 <div class="layout-copy">
                     2011-2016 &copy; TalkingData
@@ -90,18 +90,25 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang='scss'>
+@import './assets/common.scss';
+
 .layout{
 	border: 1px solid #d7dde4;
 	background: #f5f7f9;
 	position: relative;
 	border-radius: 4px;
-	overflow: hidden;
+    overflow: hidden;
+    height: 100%;
+
+    .ivu-row-flex{
+        height: 100%;
+    }
 
 	.layout-breadcrumb{
         padding: 10px 15px 0;
     }
     .layout-content{
-        min-height: 200px;
+        min-height: 490px;
         margin: 15px;
         overflow: hidden;
         background: #fff;
